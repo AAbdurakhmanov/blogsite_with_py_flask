@@ -1,0 +1,114 @@
+@media (min-width: 576px) 
+{ 
+
+}
+body
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+}
+header
+{
+  width: 100%;
+  box-sizing: border-box;
+}
+.headerlogo 
+{
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+a.nav-link
+{
+  font-weight: 600;
+  color: black;
+  
+}
+a.nav-link:hover
+{
+  font-weight: 700;
+  color: white;
+  border-radius: 14px;
+  background-color: rgba(85, 95, 240, 0.781);
+  transition: .3s;
+}
+
+.profile-picture
+{
+  max-width: 200px;
+  border-radius: 40%;
+  margin-right: 40px;
+}
+.sc-profilewords 
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.myds
+{
+  font-weight: 600;
+  font-size: 18px;
+}
+.sc-profileicons
+{
+  font-size: 40px;
+  margin-top: 10px;
+}
+i
+{
+  margin: 0 10px 0 0;
+}
+a.facebook
+{
+  color: rgb(3, 54, 136);
+  text-decoration: none;
+}
+a.telegram 
+{
+  color: rgb(36, 142, 241);
+}
+a.github 
+{
+  color: black;
+}
+a.linkedin
+{
+  color: rgb(0, 140, 255);
+}
+.sc-quotes 
+{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+a.cnoc:first-child
+{ 
+  background-color: rgb(100 156 240);
+}
+a.cnoc-2:hover
+{
+  border: 1px solid rgb(148, 139, 139);
+}
+.footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.year
+{
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-style: oblique;
+  color: rgb(155, 153, 151);
+  text-align: center;
+}
