@@ -1,25 +1,71 @@
-{% extends 'base.html' %}
-{% block body %}
-<section class="container">
-  <div class="sc-profileimg d-flex">
-    <img class="profile-picture" src="/static/imgs/screen.jpg" alt="Abdumannon">
-    <div class="sc-profilewords">
-      <h2>Abdumannon Abdurakhmanov</h2>
-      <span class="myds">Software engineer, Fullstuck developer</span><br>
-      <div class="sc-profileicons">
-        <a href="#" class="icons facebook"><i class="fa fa-facebook-f"></i></a>
-        <a href="#" class="icons telegram"><i class="fa fa-telegram"></i></a>
-        <a href="#" class="icons github"><i class="fa fa-github"></i></a>
-        <a href="#" class="icons linkedin"><i class="fa fa-linkedin"></i></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>My blog</title>
+
+</head>
+<body>
+  <div class="container-fluid">
+    <header class="headerinner">
+      <div class="headerlogo d-flex">
+        <div class="logo-left">
+          <h5>Abdumannon`s Blog</h5>  
+        </div>
+        <div class="logo-right float-right">
+          <nav class="navbar navbar-expand-sm">
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog') }}">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('some') }}">some</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>  
+    </header>
+    <section class="container">
+      <div class="sc-profileimg d-flex">
+        <img class="profile-picture" src="/static/imgs/screen.jpg" alt="Abdumannon">
+        <div class="sc-profilewords">
+          <h2>Abdumannon Abdurakhmanov</h2>
+          <span class="myds">Software engineer, Fullstuck developer</span><br>
+          <div class="sc-profileicons">
+            <a href="#" class="icons facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" class="icons telegram"><i class="fa fa-telegram"></i></a>
+            <a href="#" class="icons github"><i class="fa fa-github"></i></a>
+            <a href="#" class="icons linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>  
+      </div>
+      <div class="sc-quotes">
+        <span><h2 class="quotes-words"><q><b>An old programmer in the old world</b></q></h2></span>
+        <div class="sc-buttons">
+          <a href="#" class="btn cnoc">Resume</a>
+          <a href="#" class="btn cnoc-2">About Me</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="year"><i class="fa fa-copyright">2021</i></div>          
+      </div>
+    </footer>
   </div>
-  <div class="sc-quotes">
-    <span><h2 class="quotes-words"><q><b>An old programmer in the old world</b></q></h2></span>
-    <div class="sc-buttons">
-      <a href="#" class="btn cnoc">Resume</a>
-      <a href="#" class="btn cnoc-2">About Me</a>
-    </div>
-  </div>
-</section>
-{% endblock %}
+</body>
+</html>

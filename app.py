@@ -1,7 +1,8 @@
 from flask import Flask, app, Blueprint, jsonify, redirect, request, url_for
 from flask.templating import render_template
 from werkzeug.exceptions import abort
-import jinja2
+
+
 app = Flask(__name__)
 
 # Route part
