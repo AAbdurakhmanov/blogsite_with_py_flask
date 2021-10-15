@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>{% block title %} {% endblock %}</title>
+
+</head>
+<body>
+  <div class="container-fluid">
+    <header class="headerinner header--title flex align-items-center show-bg">
+      <div class="headerlogo d-flex">
+        <div class="logo-left">
+          <h5>Abdumannon`s Blog</h5>  
+        </div>
+        <div class="logo-right">
+          <nav class="navbar navbar-expand-sm col-sm-5 col-md-6">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog') }}">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('some') }}">some</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer"> 
+      <div class="container">
+        <div class="year"><i class="fa fa-copyright">2021</i></div>          
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
