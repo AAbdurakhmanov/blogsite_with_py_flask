@@ -1,24 +1,3 @@
-@media (min-width: 1024px) and (max-width: 1280px) 
-{
-  
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px)
-{
-
-}
-
-@media all and (min-width: 480px) and (max-width: 768px)
-{
-
-}
-
-@media all and (max-width: 480px)
-{ 
-
-}
-
-
 body
 {
   box-sizing: border-box;
@@ -31,23 +10,25 @@ body
   padding: 0;
   font-family: 'Patrick Hand', cursive;
 }
+.home-page
+{
+  padding-top: 50px;
+}
 header
 {
   width: 100%;
   box-sizing: border-box;
 }
-.headerlogo 
+#myname
 {
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
+  font-size: 30px !important;
+  color: black;
 }
-
 a.nav-link
 {
+  font-size: 25px;
   font-weight: 600;
   color: black;
-  
 }
 a.nav-link:hover
 {
@@ -57,11 +38,14 @@ a.nav-link:hover
   background-color: rgba(85, 95, 240, 0.781);
   transition: .3s;
 }
-
+li
+{
+  padding: 0 20px;
+}
 .profile-picture
 {
   max-width: 200px;
-  border-radius: 40%;
+  border-radius: 10%;
   margin-right: 40px;
 }
 .sc-profilewords 
@@ -119,6 +103,7 @@ a.cnoc-2:hover
   left: 0;
   bottom: 0;
   width: 100%;
+  
 }
 .year
 {

@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}{% endblock %}
+{% block title %}abdumannon`s blog{% endblock %}
 {% block content %}
-<section class="container">
+<section class="container home-page">
   <div class="sc-profileimg d-flex">
-    <img class="profile-picture" src="/static/imgs/screen.jpg" alt="Abdumannon">
+    <img class="profile-picture" src="{{ url_for('static', filename='imgs/i.jpg') }} " alt="Abdumannon">
     <div class="sc-profilewords">
       <h2>Abdumannon Abdurakhmanov</h2>
       <span class="myds">Software engineer, Fullstuck developer</span><br>
@@ -18,11 +18,13 @@
   <div class="sc-quotes">
     <span><h2 class="quotes-words"><q><b>An old programmer in the old world</b></q></h2></span>
     <div class="sc-buttons">
-      <a href="#" class="btn cnoc">Resume</a>
-      <a href="#" class="btn cnoc-2">About Me</a>
+      <a href="{{ url_for('some') }}" class="btn cnoc">Resume</a>
+      <a href="{{ url_for('about') }}" class="btn cnoc-2">About Me</a>
     </div>
-  </div>
+  </div>  
 </section>
-
+{% for post in posts %}
+  <h3>{{ post.title }}</h3>
+{% endfor %}
 
 {% endblock %}
