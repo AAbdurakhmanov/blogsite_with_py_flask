@@ -1,6 +1,5 @@
 from models import *
 
-
 # Route part
 @app.route('/')
 def index():
@@ -8,7 +7,7 @@ def index():
 
 @app.route('/blog')
 def blog():
-  posts = Blogpost.query.order_by(Blogpost.date_posted.desc()).all()
+  posts = Blogpost.query.order_by(Blogpost.title).all()
   return render_template('blog.html', posts=posts)
 
 @app.route('/about')
