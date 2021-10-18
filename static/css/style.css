@@ -24,16 +24,17 @@ header
   font-size: 30px !important;
   color: black;
 }
+
 a.nav-link
 {
   font-size: 25px;
   font-weight: 600;
-  color: black;
+  color: black !important;
 }
 a.nav-link:hover
 {
   font-weight: 700;
-  color: white;
+  color: white !important;
   border-radius: 14px;
   background-color: rgba(85, 95, 240, 0.781);
   transition: .3s;
@@ -113,4 +114,40 @@ a.cnoc-2:hover
   font-style: oblique;
   color: rgb(155, 153, 151);
   text-align: center;
+}
+
+/* 
+Karocciii
+*/
+li .bla1 .bla2 
+{
+  list-style-type: none;
+}
+.list-card-image
+{
+  display: flex;
+  width: 270px;
+  height: 160px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  overflow: hidden;
+  margin-right: 25px;
+  list-style-type: none;
+}
+.blog-list-li
+{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 20px 0;
+  padding: 0;
+
+}
+.post-title
+{
+  text-decoration: none;
+}
+.post_preview > a h1 h3
+{
+  text-decoration: none;
 }
