@@ -8,7 +8,7 @@
   <meta name="description" content="Bootstrap 5 fixed navbar on scroll page examples, Bootstrap 5" />  
 
   <!-- Favicons -->
-  <link rel="icon"       href="{{ url_for('static', filename='imgs/man.png') }}">
+  <link rel="icon"       href="{{ url_for('static', filename='imgs/man.jpg') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,7 +42,7 @@
 </head>
 <body>
   <header class="headerinner header--title flex align-items-center show-bg">
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-white">
       <div class="container">
         <a id="myname" class="navbar-brand" href="{{ url_for('index') }}">Abdumannon`s Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
 {% endblock %}
   <footer class="footer"> 
     <div class="container">
-      <div class="year"><i class="fa fa-copyright">2021</i></div>          
+      <div class="year"><i class="fa fa-copyright">2021 Abdumannon.com</i></div>          
     </div>
   </footer>
 </body>

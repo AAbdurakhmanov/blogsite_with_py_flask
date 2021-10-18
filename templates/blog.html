@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}blog{% endblock %}
 {% block content %}
-
+<!-- 
 <div class="container">
   <div class="row">
     <div class="col-lg-8 mx-auto">
@@ -20,6 +20,62 @@
         </div>
       {% endfor %}
       <hr>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 offset-md-2">
+      <ul class="blog-list-ul">
+        <li class="blog-list-li">
+          <div class="list-card-image">
+            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/ipl-bot-copy.jpg" alt="">
+          </div>
+          <div class="list-card-content">
+            {% for post in posts %}
+            <div class="post_preview">
+              <a href="{{ url_for('blog', post_id=post.id) }}">
+                <span class="post-title">
+                  <h1>
+                    {{ post.id }}
+                    {{ post.title }}
+                  </h1>
+                </span>
+                <h3>
+                  {{ post.subtitle }}
+                </h3>
+              </a>
+              <p class="post-meta">{{ post.date_posted.strftime("%Y-%m-%d") }}</p>
+            </div>
+            {% endfor %}
+            <!-- <a href="">A Guide to Machine Learning Pipelines and Orchest asudahuihqwhyhyhuy</a>
+            <h6>October 18,2021</h6> -->
+          </div>
+        </li>
+        <li class="blog-list-li">
+          <div class="list-card-image">
+            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2021/02/88039ml.jpg" alt="">
+          </div>
+          <div class="list-card-content">
+            {% for post in posts %}
+            <div class="post_preview">
+              <a href="{{ url_for('blog', post_id=post.id) }}">
+                <span class="post-title">
+                  <h1>
+                    {{ post.id }}
+                    {{ post.title }}
+                  </h1>
+                </span>
+                <h3>
+                  {{ post.subtitle }}
+                </h3>
+              </a>
+              <p class="post-meta">{{ post.date_posted.strftime("%Y-%m-%d") }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
