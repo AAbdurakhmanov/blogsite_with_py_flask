@@ -24,8 +24,6 @@ share = Share(app)
 migrate = Migrate(app, db)
 
 
-
-
 class Blogpost(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   title = db.Column(db.String(50))
