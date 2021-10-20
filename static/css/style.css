@@ -13,6 +13,8 @@ body
 .home-page
 {
   padding-top: 50px;
+  min-height: 639px;
+
 }
 header
 {
@@ -61,8 +63,7 @@ li
 }
 .sc-profileicons
 {
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 20px;
 }
 i
 {
@@ -100,25 +101,20 @@ a.cnoc-2:hover
 }
 .footer
 {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   
 }
-.year
+p
 {
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-style: oblique;
-  color: rgb(155, 153, 151);
-  text-align: center;
+  margin: 0 !important;
 }
-
-/* 
-Karocciii
-*/
+footer .container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 li .bla1 .bla2 
 {
   list-style-type: none;
@@ -138,16 +134,24 @@ li .bla1 .bla2
 .blog-list-li
 {
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   margin: 20px 0;
   padding: 0;
 
 }
-.post-title
+.adad
 {
-  text-decoration: none;
+  min-height: 639px;
 }
-.post_preview > a h1 h3
+a
 {
-  text-decoration: none;
+  text-decoration: none !important;
+
+}
+button .navbar-togler
+{
+  background-color: rgb(0, 140, 255) !important;
+}
+.fa-copyright
+{
+  color: #8e8989;
 }

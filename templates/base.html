@@ -8,7 +8,7 @@
   <meta name="description" content="Bootstrap 5 fixed navbar on scroll page examples, Bootstrap 5" />  
 
   <!-- Favicons -->
-  <link rel="icon"       href="{{ url_for('static', filename='imgs/man.jpg') }}">
+  <link rel="icon"       href="{{ url_for('static', filename='imgs/icon2.jpg') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -52,7 +52,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="{{ url_for('blog') }}"> blog </a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}"> about </a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('some') }}"> some </a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('add') }}"> add </a></li>
           </ul>
         </div>
       </div> 
@@ -60,10 +60,10 @@
   </header>
 {% block content %}
 {% endblock %}
-  <footer class="footer"> 
-    <div class="container">
-      <div class="year"><i class="fa fa-copyright">2021 Abdumannon.com</i></div>          
-    </div>
-  </footer>
+<footer class="text-center">
+  <div class="text-center p-2">
+    <p class="fa-copyright" >© 2020 abdumannon.com</p>
+  </div>
+</footer>
 </body>
 </html>

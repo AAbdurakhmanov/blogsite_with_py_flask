@@ -6,9 +6,12 @@ from werkzeug.exceptions import abort
 from flask_migrate import Migrate, migrate
 from flask_share import Share
 from flask_user import UserManager, roles_accepted, roles_required, user_registered, login_required
+import os
+
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = '4079d33f50e3492uig172216ghjkfd1947c3cab26'
+app.config['SECURITY_PASSWORD_SALT'] = 'hpqohang;jgbiu2ug5t23bl4vrqwy'
 
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
 app.config['SECURITY_POST_LOGIN'] = '/profile'
