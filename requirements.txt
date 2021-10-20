@@ -16,7 +16,6 @@ cryptography==3.4.7
 distlib==0.3.2
 dnspython==2.1.0
 email-validator==1.1.2
-facebook-sdk==4.0.0rc0
 filelock==3.0.12
 Flask==1.1.2
 Flask-Admin==1.5.8
