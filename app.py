@@ -17,30 +17,26 @@ def blog():
 def about():
   return render_template('about.html')
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add')
 def add():
+  return render_template('add.html')  
+
+@app.route('/addpost', methods=['POST'])
+def addpost():
   form = AddpostForm()
   if form.validate_on_submit():
-      print('buniciii')
-      p = Blogpost(
-                    title = form.title.data,
-                    subtitle = form.subtitle.data,
-                    date_posted = datetime.now(),
-                    content = form.content.data,
-                  )
-      db.session.add(p)
+      
+      post = Blogpost(title=form.title.data, subtitle=form.subtitle.data, content=form.content.data, date_posted=datetime.utcnow())
+      db.session.add(post)
       db.session.commit()
-      print('qoshildi bazaga')
       return redirect(url_for('index'))
-      print('icida1')
-      # return redirect(url_for('add'))
-  return render_template('add.html', form=form)
-  
+  return render_template('index.html', title='Home')
 
-@app.route('/posts/<int:post_id>')
+
+@app.route('/post/<int:post_id>')
 def post(post_id):
-  post = Blogpost.query.order_by(Blogpost.date_posted.desc()).all()
-  return render_template('posts.html', form=form)
+  post = Blogpost.query.filter_by(id=post_id).one()
+  return render_template('post.html', post=post)
 
 
 

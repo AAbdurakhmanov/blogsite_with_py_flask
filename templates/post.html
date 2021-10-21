@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Posts{% endblock %}
+{% block content %}
+<div class="container home-page">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="post-heading">
+        <h1>{{ post.title }}</h1>
+        <h3>{{ post.subtitle }}</h3>
+        <span>{{ post.date_posted.strftime('%Y-%m-%d') }}</span>
+      </div>
+      <article>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              {{ post.content|safe }}
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+{% endblock %}
