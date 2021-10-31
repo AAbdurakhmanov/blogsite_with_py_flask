@@ -1,2 +1,1 @@
-# myblog
-#Keyin yozaman xO
+flasksimpleblog
